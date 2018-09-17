@@ -14,13 +14,13 @@ let z=16;
 let positiveX = (x > 0)
 let negativeX = (x < 0);
 
-//using all 3 variables
-let allPositive (x and y and z > 0) ;
-let allNegative;
+//using all 3 (variables)
+let allPositive (x>0 && y>0 && z>0);
+let allNegative (x<0 && y<0 && z<0);
 
 //using all 3 variables
-let atLeastOnePositive;
-let atLeastOneNegative;
+let atLeastOnePositive (x>0 or y<0 z<0 );
+let atLeastOneNegative (x>0 or y<0 or z>0 );
 
 
 /*

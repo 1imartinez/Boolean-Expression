@@ -1,8 +1,8 @@
 //Initialize the variables below to what you want: either true or false.
-let outlet;
-let electricity;
-let plug;
-let powerSwitch;
+let outlet= true;
+let electricity= false;
+let plug= false;
+let powerSwitch= true;
 
 
 
@@ -10,7 +10,7 @@ let powerSwitch;
 //These variables should never change.
 const on = true;
 const off = !on;
-let c;
+let c= (outlet && electricity && plug && powerSwitch);
 
 
 
@@ -28,11 +28,11 @@ let ready = c && c && c && c && c;
 
 // 2. You forget to pay your elecrtic bill.  This means you have no electrity, set the variable unPaid equal to electrity AND false;
 
-let unPaid; 
+let unPaid= true; 
 
 // 3. Old people just don't understand electronics.  Fill in the variable oldPeople to be equal to powerSwitch AND the opposite of powerSwitch
 
-let oldPeople = powerSwitch && c;
+let oldPeople = powerSwitch && !powerSwitch;
 
 // 4. You are unsure if your device is plugged in or turned on.  Set the variable unsure to the OPPOSITE of POWERSWITCH AND the group - aka parentheses - of the OPPOSITE of PLUG OR the OPPOSITE of OUTLET.
 
