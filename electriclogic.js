@@ -1,8 +1,8 @@
 //Initialize the variables below to what you want: either true or false.
 let outlet= true;
-let electricity= false;
+let electricity= true:
 let plug= false;
-let powerSwitch= true;
+let powerSwitch= false;
 
 
 
@@ -23,7 +23,6 @@ let c= (outlet && electricity && plug && powerSwitch);
 
 
 // 1. Your electronic device is ready if it is PLUGGED into an OUTLET with ELECTRICITY AND the POWERSWITCH is ON. Replace all of the c's with the correct variables.
-
 let ready = c && c && c && c && c;
 
 // 2. You forget to pay your elecrtic bill.  This means you have no electrity, set the variable unPaid equal to electrity AND false;
@@ -36,18 +35,18 @@ let oldPeople = powerSwitch && !powerSwitch;
 
 // 4. You are unsure if your device is plugged in or turned on.  Set the variable unsure to the OPPOSITE of POWERSWITCH AND the group - aka parentheses - of the OPPOSITE of PLUG OR the OPPOSITE of OUTLET.
 
-let unsure;
+let unsure= !powerSwitch(!plug || !outlet);
 
 // 5. Something is broken.  You are not sure if it is your power cord or the wall.  Set the variable broken equal to the OUTLET OR the PLUG OR the POWERSWITCH
 
-let broken;
+let broken= outlet || plug || powerSwitch;
 
 
 
 
 
-/*
-*
+/*o
+
 *  This section is what prints out the the terminal so you can see the results.
 *
 */
